@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="kr.co.orng15.lifestartapplication">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/icon_app8"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/icon_app8"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.shuvic.alumni.cameraalbum"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <activity android:name=".IndexActivity" />
+        <activity android:name=".LoginActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".JoinActivity" />
+        <activity android:name=".JoinCompanyActivity" />
+        <activity android:name=".JoinInputActivity" />
+        <activity android:name=".ComModifyActivity" />
+        <activity android:name=".ResumeActivity" />
+        <activity android:name=".ResumeManagerActivity" />
+        <activity android:name=".ResumeDetailActivity" />
+        <activity android:name=".CompanyDetailActivity" />
+        <activity android:name=".BoardActivity" />
+        <activity android:name=".BoardDetailActivity" />
+        <activity android:name=".BoardCheckActivity" />
+        <activity android:name=".AddressPopupActivity" />
+        <activity android:name=".ApplyListActivity" />
+        <activity android:name=".CompanyListActivity" />
+        <activity android:name=".ApplyConfirmActivity" />
+        <activity android:name=".EmailPopupActivity" />
+        <activity android:name=".AdminActivity"></activity>
+        <activity android:name=".MargerActivity" />
+        <activity android:name=".AdminBoardActivity"></activity>
+    </application>
+
+</manifest>

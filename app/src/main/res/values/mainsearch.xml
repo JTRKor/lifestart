@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="main_search">
+        <item>ID</item>
+        <item>회원구분</item>
+        <item>회원상태</item>
+    </string-array>
+
+</resources>

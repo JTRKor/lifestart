@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="member_status">
+        <item>0. 정상유저</item>
+        <item>1. 제제유저</item>
+    </string-array>
+
+</resources>

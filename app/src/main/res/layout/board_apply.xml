@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@drawable/shape_main_rectangle"
+    >
+
+    <RadioButton
+        android:id="@+id/radio_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <TextView
+            android:id="@+id/ed_resume_name"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:textSize="16dp"
+            android:layout_margin="5dp"
+            android:text="자소서명"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:background="@drawable/shape_rectangle"
+            />
+    </LinearLayout>
+
+</LinearLayout>
